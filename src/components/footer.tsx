@@ -1,5 +1,5 @@
 
-const Footer = () => {
+export default function Footer() {
   return (
     <div className="w-full flex justify-between items-center py-2 md:px-36 fixed bottom-0 left-0 dark:bg-zinc-950 backdrop-blur-xl z-50">
       <Social />
@@ -9,8 +9,6 @@ const Footer = () => {
     </div>
   )
 }
-
-export default Footer
 
 const Social = () => {
   const socialMedia = [

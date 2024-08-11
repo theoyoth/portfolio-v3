@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation"
 import {motion} from 'framer-motion'
 import BlurHover from "./blur-hover"
 
-const Header = () => {
+export default function Header() {
   return (
     <div className="w-full flex justify-between items-center py-2 md:px-36 dark:bg-zinc-950/30 fixed top-0 left-0 z-50 backdrop-blur-sm bg-zinc-200/50">
       <Link href="/">
@@ -26,8 +26,6 @@ const Header = () => {
     </div>
   )
 }
-
-export default Header
 
 const Navbar = () => {
   const links = [
