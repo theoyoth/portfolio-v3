@@ -2,7 +2,7 @@
 
 import {motion} from 'framer-motion';
 
-const LayoutAnimation = ({children,key}:{children:React.ReactNode,key?:any}) => {
+const LayoutAnimation = ({children}:{children:React.ReactNode}) => {
 
   const animation = {
     hidden:{

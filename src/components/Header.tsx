@@ -29,7 +29,7 @@ const Header = () => {
 
 export default Header
 
-export const Navbar = () => {
+const Navbar = () => {
   const links = [
     {
       href:"/projects",
@@ -49,7 +49,7 @@ export const Navbar = () => {
   )
 }
 
-export const NextLink = ({href,label}:{href:string,label:string}) => {
+const NextLink = ({href,label}:{href:string,label:string}) => {
   const pathname = usePathname()
 
   return (

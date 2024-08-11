@@ -12,7 +12,7 @@ const Footer = () => {
 
 export default Footer
 
-export const Social = () => {
+const Social = () => {
   const socialMedia = [
     {
       name:'instagram',
