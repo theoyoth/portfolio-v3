@@ -10,11 +10,11 @@ import LayoutAnimation from "@/components/layout-animation";
 
 export default function Home() {
   return (
-    <LayoutAnimation>
-    <main className="h-[100dvh] overflow-hidden pt-12">
+    <main className="h-screen pt-12">
+      <LayoutAnimation>
       <section className="w-3/4 m-auto flex flex-col items-center space-y-8 mt-10">
         <div className="relative w-[140px] h-[140px]">
-          <Image src="/img/avatar.jpg" alt="profil pic" fill sizes="(min-width:1024px) 100vw, (min-width:768px) 50vw, 33vw" className="rounded-lg object-cover" />
+          <Image src="/img/avatar.jpg" alt="profil pic" fill sizes="(min-width:1024px) 100vw, (min-width:768px) 50vw, 33vw" priority className="rounded-lg object-cover" />
         </div>
         <div className="flex flex-col space-y-8">
           <div className="text-2xl dark:text-zinc-100 text-justify">
@@ -27,7 +27,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </main>
     </LayoutAnimation>
+    </main>
   );
 }

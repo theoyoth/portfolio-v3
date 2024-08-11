@@ -41,11 +41,11 @@ export const Social = () => {
   ]
 
   return (
-    <ul className="flex space-x-4 items-center text-xs">
+    <ul className="flex space-x-4 items-center text-[0.7rem]">
       {
         socialMedia.map((social,idx) => (
           <li key={idx} className="relative">
-            <a href={social?.href} target="_blank" className="dark:before:content-[''] dark:before:w-full dark:before:h-full dark:before:absolute dark:before:inset-0 dark:hover:before:bg-blue-500 dark:hover:before:blur-[20px] dark:before:opacity-60 before:transition-all before:duration-100 before:ease-in-out"><span className="text-[8px] cursor-pointer">{social?.tag}</span>{social?.name}</a>
+            <a href={social?.href} target="_blank" className="dark:before:content-[''] dark:before:w-full dark:before:h-full dark:before:absolute dark:before:inset-0 dark:hover:before:bg-blue-500 dark:hover:before:blur-[20px] dark:before:opacity-60 before:transition-all before:duration-100 before:ease-in-out"><span className="text-[0.5rem] cursor-pointer">{social?.tag}</span>{social?.name}</a>
           </li>
         ))
       }
