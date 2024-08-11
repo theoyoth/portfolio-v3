@@ -1,11 +1,7 @@
-"use client"
-
 import Link from "next/link"
 import { ModeToggle } from "./mode-toggle"
 import Image from "next/image"
-import { usePathname } from "next/navigation"
-import {motion} from 'framer-motion'
-import BlurHover from "./blur-hover"
+import Navbar from "./navbar"
 
 export default function Header() {
   return (
@@ -24,43 +20,5 @@ export default function Header() {
       <Navbar />
       <ModeToggle />
     </div>
-  )
-}
-
-const Navbar = () => {
-  const links = [
-    {
-      href:"/projects",
-      label:"Projects",
-    },
-    {
-      href:"/videos",
-      label:"Videos",
-    },
-  ]
-  return (
-    <div className="flex justify-between space-x-6">
-      {links.map((link,idx) => (
-        <NextLink key={idx} href={link?.href} label={link.label} />
-      ))}
-    </div>
-  )
-}
-
-const NextLink = ({href,label}:{href:string,label:string}) => {
-  const pathname = usePathname()
-
-  return (
-    <Link 
-      href={href} 
-      className="relative px-4 py-1"
-      >
-        <BlurHover>
-          <p className="relative z-10 text-sm font-semibold">{label}</p>
-        </BlurHover>
-        {pathname === href && (
-          <motion.div layoutId="blue-bg" transition={{duration:0.6,type:"spring"}} className="absolute inset-0 bg-blue-600" style={{borderRadius:20}}></motion.div>
-        )}
-    </Link>
   )
 }
