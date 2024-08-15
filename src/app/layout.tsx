@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Roboto_Mono } from "next/font/google";
 import "./globals.css";
+import { cn } from "@/lib/utils"
 // components
 import { Provider } from "./provider";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 
-const poppins = Poppins({ subsets: ["latin"], weight:['300','400','500','600'] });
+const roboto = Roboto_Mono({ 
+  subsets: ["latin"], 
+  weight:['300','400','500','600'],
+  variable: "--font-roboto",
+});
 
 export const metadata: Metadata = {
   title: "TheoSB",
@@ -20,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${poppins.className} bg-slate-200 dark:bg-zinc-950`}>
+      <body className={cn("bg-slate-200 dark:bg-zinc-950 font-roboto", roboto.variable)}>
         <Provider>
           <Header />
           {children}
