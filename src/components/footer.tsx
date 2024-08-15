@@ -1,7 +1,7 @@
 
 export default function Footer() {
   return (
-    <div className="w-full flex justify-between items-center py-2 md:px-36 fixed bottom-0 left-0 dark:bg-zinc-950 backdrop-blur-xl z-50">
+    <div className="w-full flex justify-between items-center py-2 md:px-36 dark:bg-zinc-950 backdrop-blur-xl fixed left-0 bottom-0 z-0">
       <Social />
       <div>
         <p className="dark:font-normal font-medium text-xs cursor-default text-zinc-600">&copy;{new Date().getFullYear()} Theo. All Rights Reserved.</p>

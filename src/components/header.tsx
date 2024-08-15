@@ -37,9 +37,13 @@ const Navbar = () => {
       href:"/videos",
       label:"Videos",
     },
+    {
+      href:"/blogs",
+      label:"Blogs",
+    },
   ]
   return (
-    <div className="flex justify-between space-x-6">
+    <div className="flex justify-between space-x-4">
       {links.map((link,idx) => (
         <NextLink key={idx} href={link?.href} label={link.label} />
       ))}
