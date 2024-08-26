@@ -11,17 +11,21 @@ const RealEstate = () => {
     <div className="min-h-screen py-14">
       <LayoutAnimation>
       <section className="w-3/4 m-auto">
-        <div className="m-auto w-1/2 grid grid-cols-1 grid-rows-2 gap-2">
-          <ImageComp
-            src="/img/projects/real-estate1.png"
-            alt="real estate website"
-          />
-          <ImageComp
-            src="/img/projects/real-estate2.png"
-            alt="real estate website"
-          />
+        <div className="m-auto md:w-2/3 grid grid-cols-1 grid-rows-2 gap-2">
+          <div className="w-full h-[150px] md:w-full md:h-[340px] relative">
+            <ImageComp
+              src="/img/projects/real-estate1.png"
+              alt="real estate website"
+            />
+          </div>
+          <div className="w-full h-[150px] md:w-full md:h-[340px] relative">
+            <ImageComp
+              src="/img/projects/real-estate2.png"
+              alt="real estate website"
+            />
+          </div>
         </div>
-        <div className="w-1/2 m-auto flex flex-col space-y-4">
+        <div className="md:w-1/2 m-auto flex flex-col space-y-4">
           <div className='flex space-x-2 items-center pt-2'>
             <BiWorld />
             <h1 className='dark:text-blue-600 text-xl font-bold'>Real estate website 🏠</h1>
@@ -30,7 +34,7 @@ const RealEstate = () => {
             Di projek ini, saya membuat website real estate menggunakan API dari Rapid API, user bisa mencari perumahan yang diinginkan sesuai spesifikasi yang dimasukkan.
           </p>
           <div className='flex flex-col justify-center items-center space-y-4'>
-            <div className='flex justify-center space-x-2'>
+            <div className='flex justify-center space-x-2 flex-wrap space-y-2 md:space-y-0'>
               <p>STACK :</p>
               <Badge>NextJS</Badge>
               <Badge className="bg-teal-400">ChakraUI</Badge>

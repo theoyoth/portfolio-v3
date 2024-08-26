@@ -1,10 +1,10 @@
 
 export default function Footer() {
   return (
-    <div className="w-full flex justify-between items-center py-2 md:px-36 dark:bg-zinc-950 backdrop-blur-xl fixed left-0 bottom-0 z-0">
+    <div className="w-full flex flex-col md:flex-row justify-between items-center py-2 md:px-36 dark:bg-zinc-950 backdrop-blur-xl fixed left-0 bottom-0 z-0 space-y-2 md:space-y-0">
       <Social />
       <div>
-        <p className="dark:font-normal font-medium text-xs cursor-default text-zinc-600">&copy;{new Date().getFullYear()} Theo. All Rights Reserved.</p>
+        <p className="dark:font-normal font-medium text-[0.6rem] md:text-xs cursor-default text-zinc-600">&copy;{new Date().getFullYear()} Theo. All Rights Reserved.</p>
       </div>
     </div>
   )
@@ -39,7 +39,7 @@ const Social = () => {
   ]
 
   return (
-    <ul className="flex space-x-4 items-center text-[0.7rem]">
+    <ul className="flex space-x-4 items-center text-[0.6rem] md:text-[0.7rem]">
       {
         socialMedia.map((social,idx) => (
           <li key={idx} className="relative">

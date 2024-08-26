@@ -9,7 +9,7 @@ import BlurHover from "./blur-hover"
 
 export default function Header() {
   return (
-    <div className="w-full flex justify-between items-center py-2 md:px-36 dark:bg-zinc-950/30 fixed top-0 left-0 z-50 backdrop-blur-sm bg-zinc-200/50">
+    <div className="w-full flex justify-between items-center py-2 px-4 md:px-36 dark:bg-zinc-950/30 fixed top-0 left-0 z-50 backdrop-blur-sm bg-zinc-200/50">
       <Link href="/">
         <div className="w-[24px] h-[22px] relative bg-zinc-200 dark:bg-zinc-950">
           <Image
@@ -38,7 +38,7 @@ const Navbar = () => {
       label:"Videos",
     },
     {
-      href:"/blogs",
+      href:"/blog",
       label:"Blogs",
     },
   ]
@@ -57,7 +57,7 @@ const NextLink = ({href,label}:{href:string,label:string}) => {
   return (
     <Link 
       href={href} 
-      className="relative px-4 py-1"
+      className="relative px-2 md:px-4 py-1"
       >
         <BlurHover>
           <p className="relative z-10 text-sm font-semibold">{label}</p>

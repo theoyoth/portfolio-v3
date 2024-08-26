@@ -10,25 +10,33 @@ const StudioT = () => {
     <div className="min-h-screen py-14">
       <LayoutAnimation>
       <section className="w-3/4 m-auto">
-        <div className="w-1/2 m-auto grid grid-cols-1 grid-rows-2 gap-2">
-          <ImageComp
-            src="/img/projects/studiot1.png"
-            alt="real estate website"
-          />
-          <ImageComp
-            src="/img/projects/studiot2.png"
-            alt="real estate website"
-          />
-          <ImageComp
-            src="/img/projects/studiot3.png"
-            alt="real estate website"
-          />
-          <ImageComp
-            src="/img/projects/studiot4.png"
-            alt="real estate website"
-          />
+        <div className="md:w-2/3 m-auto grid grid-cols-1 grid-rows-2 gap-2">
+          <div className="w-full h-[140px] md:w-full md:h-[320px] relative">
+            <ImageComp
+              src="/img/projects/studiot1.png"
+              alt="real estate website"
+            />
+          </div>
+          <div className="w-full h-[140px] md:w-full md:h-[320px] relative">
+            <ImageComp
+              src="/img/projects/studiot2.png"
+              alt="real estate website"
+            />
+          </div>
+          <div className="w-full h-[140px] md:w-full md:h-[320px] relative">
+            <ImageComp
+              src="/img/projects/studiot3.png"
+              alt="real estate website"
+            />
+          </div>
+          <div className="w-full h-[140px] md:w-full md:h-[320px] relative">
+            <ImageComp
+              src="/img/projects/studiot4.png"
+              alt="real estate website"
+            />
+          </div>
         </div>
-        <div className="w-1/2 m-auto flex flex-col space-y-4">
+        <div className="w-full md:w-1/2 m-auto flex flex-col space-y-4">
           <div className='flex space-x-2 items-center pt-2'>
             <BiWorld />
             <a href="https://studio-t.vercel.app/" target="_blank" className='dark:text-blue-600 text-xl font-bold'>StudioT 🌐</a>
@@ -37,7 +45,7 @@ const StudioT = () => {
             ini adalah projek pribadi website agensi di mana menyediakan layanan pembuatan website, ada empat menu utama di dalam website. fokus saya dalam membuat website ini adalah untuk mencoba mengaplikasikan animasi yang lebih kompleks menggunakan framer motion.
           </p>
           <div className='flex flex-col justify-center items-center space-y-4'>
-            <div className='flex justify-center space-x-2'>
+            <div className='flex justify-center space-x-2 flex-wrap space-t-2'>
               <p>STACK :</p>
               <Badge>NextJS</Badge>
               <Badge className="bg-cyan-500">TailwindCSS</Badge>

@@ -11,17 +11,21 @@ const BookLibrary = () => {
     <div className="min-h-screen py-14">
       <LayoutAnimation>
       <section className="w-3/4 m-auto">
-        <div className="m-auto w-1/2 grid grid-cols-1 grid-rows-2 gap-2">
-          <ImageComp
-            src="/img/projects/book-library.png"
-            alt="book library"
-          />
-          <ImageComp
-            src="/img/projects/book-library2.png"
-            alt="book library"
-          />
+        <div className="m-auto md:w-2/3 grid grid-cols-1 grid-rows-2 gap-2">
+          <div className="w-full h-[140px] md:w-full md:h-[320px] relative">
+            <ImageComp
+              src="/img/projects/book-library.png"
+              alt="book library"
+            />
+          </div>
+          <div className="w-full h-[140px] md:w-full md:h-[320px] relative">
+            <ImageComp
+              src="/img/projects/book-library2.png"
+              alt="book library"
+            />
+          </div>
         </div>
-        <div className="w-1/2 m-auto flex flex-col space-y-4">
+        <div className="md:w-1/2 m-auto flex flex-col space-y-4">
           <div className='flex space-x-2 items-center pt-2'>
             <BiWorld />
             <a href="https://booklibraryapp.vercel.app/" target="_blank" className='dark:text-blue-600 text-xl font-bold'>Book library website 📚</a>
